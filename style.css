@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.background {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/6a77b075-d304-4342-a055-c9e435c98b6f/web/IN-en-20260406-TRIFECTA-perspective_82b47017-148f-45be-8db8-d82a0f936d18_large.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.background .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.75;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+.background nav {
+  max-width: 80vw;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.background .logo {
+  margin-top: 40px;
+  padding-right: 20px;
+  height: 60px;
+  width: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.background .buttons {
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  gap: 13px;
+}
+
+.background .buttons select {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: 540;
+  cursor: pointer;
+  border-radius: 5px;
+  gap: 7px;
+  padding: 7px 15px;
+  margin-left: 10px;
+}
+
+.background .buttons select option {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.background .buttons button {
+  background-color: #e50914;
+  margin-top: 27px;
+  height: 40px;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 640;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px 17px;
+  z-index: 10;
+}
+
+.background .buttons button:hover {
+  background-color: #b10911;
+}
+.background .heading {
+  font-family: sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+.background .heading h1 {
+  font-size: 55px;
+  font-weight: 850;
+}
+
+.background .heading h2 {
+  font-size: 20px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+
+.background .heading h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 34px;
+}
+
+.background .heading .email {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background .heading .email input {
+  height: 50px;
+  width: 400px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(97, 97, 97);
+  font-size: 15px;
+  font-weight: 540;
+  cursor: pointer;
+  border-radius: 5px;
+  gap: 7px;
+  padding: 7px 15px;
+}
+
+.background .heading .email button {
+  height: 50px;
+  width: 200px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: 640;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px 17px;
+  margin-left: 10px;
+}
+
+.background .heading .email button:hover {
+  background-color: #b10911;
+}
+
+.separator::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  border-radius: 70%;
+  border-top: 5px solid rgba(255, 13, 41, 0.7);
+  box-shadow:
+    0 -10px 20px 6px rgba(220, 20, 60, 0.171),
+    0 -20px 40px 10px rgba(180, 10, 41, 0);
+  z-index: 10;
+}
+
+.separator::before {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(20, 30, 80, 0.7) 0%,
+    rgba(0, 0, 0, 0) 65%
+  );
+  z-index: 5;
+}
+
+.trending-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.trending-section .trending-title {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 70px 0 50px 110px;
+}
+
+.trending-section .trending-movies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 0 110px 20px 110px;
+  height: 100px;
+  width: 200px;
+}
+
+.trending-section .trending-movies img {
+  margin-top: 200px;
+  height: 280px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 7px;
+  display: flex;
+  margin-left: 25px;
+  margin-right: 30px;
+  margin-bottom: -140px;
+}
+
+.trending-section .trending-movies img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.trending-section .trending-movies .rank {
+  font-family: sans-serif;
+  color: black;
+  -webkit-text-stroke: white 1px;
+  font-size: 110px;
+  font-weight: 900;
+  margin-top: -900px;
+  z-index: 20;
+  position: relative;
+}
+
+.mrtj {
+  margin-top: -100px;
+}
+
+.mrtj .title-mrtj {
+  margin-top: 330px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 120px;
+}
+
+.mrtj .cards-mrtj {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.mrtj .card {
+  background: radial-gradient(
+    circle at bottom right,
+    rgba(255, 0, 100, 0.4),
+    rgba(20, 20, 40, 0.9) 55%
+  );
+  height: 290px;
+  width: 300px;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.mrtj .card img {
+  align-items: center;
+  height: 100px;
+  margin-top: 65px;
+  margin-left: 200px;
+  padding-bottom: 10px;
+}
+
+.mrtj .card h2 {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+
+.mrtj .card h3 {
+  color: rgb(129, 127, 127);
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-right: 10px;
+  padding-bottom: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.faq {
+  margin-top: 70px;
+  margin-left: 120px;
+}
+
+.faq h2 {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.faq .questions img {
+ padding-right: 20px;
+ height: 40px;
+}
+
+.faq .questions h3 {
+  padding: 25px;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+}
+.faq .questions {
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(45 45 45);
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 170vh;
+  margin: 7px;
+}
+
+.faq .questions:hover{
+  background-color: #5b5a5a;
+  transition: 0.5s ease-in-out
+}
+
+.second-email h3 {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 70px;
+}
+
+.second-email .email {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-email .email input {
+  height: 50px;
+  width: 400px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(97, 97, 97);
+  font-size: 15px;
+  font-weight: 540;
+  cursor: pointer;
+  border-radius: 5px;
+  gap: 7px;
+  padding: 7px 15px;
+}
+
+.second-email .email button {
+  height: 50px;
+  width: 200px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: 640;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px 17px;
+  margin-left: 10px;
+}
+
+.second-email .email button:hover {
+  background-color: #b10911;
+}
+
+footer {
+  background-color: black;
+  color: rgb(255 255 255 / 70%);
+  padding: 60px 150px;
+  font-family: Arial, sans-serif;
+}
+
+footer h4 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+footer h4 a {
+  color: rgb(255 255 255 / 70%);
+  text-decoration: none;
+}
+
+footer h4 a:hover {
+  text-decoration: underline;
+}
+
+.ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 15px 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul li {
+  margin-bottom: 8px;
+}
+
+.ul a {
+  color: rgb(255 255 255 / 70%);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.ul a:hover {
+  color: white;
+}
+
+.buttons select {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: 540;
+  cursor: pointer;
+  border-radius: 5px;
+  gap: 7px;
+  padding: 7px 15px;
+  margin-top: 30px;
+}
+
+.buttons select option {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+footer h5 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
