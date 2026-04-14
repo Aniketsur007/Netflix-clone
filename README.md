@@ -21,10 +21,6 @@ A responsive Netflix landing page clone built using **HTML and CSS**.
 * ✅ Version 1: UI built using HTML & CSS
 * 🔜 Version 2: Add interactivity using JavaScript (FAQ toggle, slider, etc.)
 
-## 📷 Preview
-
-(Add screenshots here)
-
 ## 📂 Folder Structure
 
 ```
