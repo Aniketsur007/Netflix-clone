@@ -22,7 +22,7 @@ A responsive Netflix landing page clone built using **HTML and CSS**.
 
 ## 🎥 Demo Video
 
-[▶ Watch Demo] https://github.com/user-attachments/assets/17eecabf-0073-48d1-ba62-44de87812cf8
+[▶ Watch Demo] https://github.com/user-attachments/assets/65f67dc9-f6e2-4b66-aa92-358afb33ad85
 
 ## Preview
 
