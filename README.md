@@ -28,6 +28,10 @@ A responsive Netflix landing page clone built using **HTML and CSS**.
 
 Recording 2026-04-15 094915.mp4
 
+## Live Website
+
+https://aniketsur007.github.io/Netflix-clone/
+
 ## 📌 Project Status
 
 * ✅ Version 1: UI built using HTML & CSS
